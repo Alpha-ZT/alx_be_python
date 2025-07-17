@@ -1,4 +1,3 @@
-# Prompt the user for input
 weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
 
 # Provide clothing recommendations based on the input
