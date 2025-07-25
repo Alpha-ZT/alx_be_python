@@ -5,14 +5,13 @@ def perform_operation(num1, num2, operation):
 
     if operation == "add":
         return num1 + num2
-    if operation == "subtract":
+    elif operation == "subtract":
         return num1 - num2
-    if operation == "multiply":
+    elif operation == "multiply":
         return num1 * num2
-    if operation == "divide":
+    elif operation == "divide":
         if num2 == 0:
-            return None  # divide-by-zero handling the checker can detect
+            return None
         return num1 / num2
-
-    # If an unsupported operation is passed, return None (safe for most graders)
-    return None
+    else:
+        return None
