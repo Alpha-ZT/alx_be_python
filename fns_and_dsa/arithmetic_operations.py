@@ -11,5 +11,6 @@ def perform_operation(num1: float, num2: float, operation: str):
         if num2 == 0:
             return "Error: Division by zero"
         return num1 / num2
-    else:
-        raise ValueError(f"Unsupported operation: {operation}")
+
+    # Fallback if operation is not one of the expected ones
+    return "Invalid operation"
