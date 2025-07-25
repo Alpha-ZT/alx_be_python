@@ -1,4 +1,16 @@
 def perform_operation(num1: float, num2: float, operation: str):
+    """
+    Perform basic arithmetic operations (add, subtract, multiply, divide).
+
+    Args:
+        num1 (float): First number.
+        num2 (float): Second number.
+        operation (str): One of 'add', 'subtract', 'multiply', 'divide'.
+
+    Returns:
+        float or str: The result of the operation, or an error message
+                      for invalid operations or division by zero.
+    """
     operation = operation.strip().lower()
 
     if operation == "add":
@@ -11,6 +23,5 @@ def perform_operation(num1: float, num2: float, operation: str):
         if num2 == 0:
             return "Error: Division by zero"
         return num1 / num2
-
-    # Fallback if operation is not one of the expected ones
-    return "Invalid operation"
+    else:
+        return "Invalid operation"
