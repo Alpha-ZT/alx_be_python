@@ -1,4 +1,6 @@
-def perform_operation(num1: float, num2: float, operation: str):
+# fns_and_dsa/arithmetic_operations.py
+
+def perform_operation(num1, num2, operation):
     operation = operation.strip().lower()
 
     if operation == "add":
@@ -9,7 +11,7 @@ def perform_operation(num1: float, num2: float, operation: str):
         return num1 * num2
     elif operation == "divide":
         if num2 == 0:
-            return "Error: Division by zero"
+            return None
         return num1 / num2
     else:
-        raise ValueError(f"Unsupported operation: {operation}")
+        return None
