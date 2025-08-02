@@ -26,7 +26,7 @@ class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(3, 2), 5)
         self.assertEqual(self.calc.add(-1, -4), -5)
         self.assertEqual(self.calc.add(0, 5), 5)
@@ -54,4 +54,5 @@ class TestSimpleCalculator(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
 
